@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavitha Muthuraman — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">Kavitha Muthuraman</a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#schema">Schema</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:kavim2203@gmail.com">Say hello!</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">-- portfolio.python</p>
+        <pre class="query-line"><code><span class="kw">from</span> kavitha <span class="kw">import</span> Developer
+        myself = Developer(focus=<span class="str">'data-driven systems'</span>)<span class="cursor">&#9608;</span></code></pre>
+        <h1 class="hero-title">Kavitha M</h1>
+        <p class="hero-role">Software Developer <span class="dim">/</span> Applied Mathematician</p>
+        <p class="hero-desc" style="text-align: justify; text-justify: inter-word;">I build software the way I was trained to think about data: structured, integrated, and provable. Python, C++, DSA, and SQL on the outside — data pipelines, ML models and relational thinking underneath.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="Kavitha_M_Resume.pdf" download class="btn btn-ghost">Download Resume ↓</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">99.91<span class="unit">%</span></span><span class="stat-label">sentiment model accuracy</span></div>
+          <div class="stat"><span class="stat-num">5</span><span class="stat-label">ML models built &amp; compared</span></div>
+          <div class="stat"><span class="stat-num">1,000<span class="unit">+</span></span><span class="stat-label">records piped &amp; balanced</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="result-card">
+          </div>
+          <div class="result-body">
+            <img src="profile.jpg" alt="Kavitha M" class="profile-photo">
+            <table class="result-table">
+              <tr><td class="col-key">Role</td><td>Software Developer</td></tr>
+              <tr><td class="col-key">Degree</td><td>M.Sc Applied Mathematics</td></tr>
+              <tr><td class="col-key">Status</td><td><span class="badge">open_to_work</span></td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span></span>scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="eyebrow">-- About</p>
+    <div class="about-grid">
+      <h2 class="section-title">A mathematician who ships code.</h2>
+      <p class="about-body" style="text-align: justify; text-justify: inter-word;">Applied Mathematics postgraduate with hands-on software development experience across Python, C++ and SQL, backed by strong foundations in Data Structures &amp; Algorithms, Object-Oriented Programming, and Database Management Systems. I like building end-to-end applications that integrate relational databases with structured data pipelines, and I've worked with Big Data concepts like data integration, warehousing and large-scale handling. My goal is simple: apply solid engineering fundamentals to build software that's scalable and genuinely data-driven.</p>
+    </div>
+  </section>
+
+  <!-- SCHEMA / SKILLS as ER DIAGRAM -->
+  <section class="section schema-section" id="schema">
+    <p class="eyebrow">-- Schema.dbml</p>
+    <h2 class="section-title">How I'm put together.</h2>
+    <p class="section-sub">An entity-relationship view of the skill set. Hover a table, or click to jump in.</p>
+
+    <div class="erd-wrap">
+      <svg id="erd" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
+    </div>
+
+    <div class="skill-tables" id="skillTables">
+      <div class="db-table" data-node="languages">
+        <div class="db-table-head">TABLE&nbsp;<span>languages</span></div>
+        <div class="db-row"><span class="pk">PK</span> Python</div>
+        <div class="db-row">C, C++</div>
+        <div class="db-row">R</div>
+        <div class="db-row">SQL</div>
+      </div>
+
+      <div class="db-table" data-node="core">
+        <div class="db-table-head">TABLE&nbsp;<span>core_cs</span></div>
+        <div class="db-row"><span class="pk">PK</span> Data Structures &amp; Algorithms</div>
+        <div class="db-row">Object-Oriented Programming</div>
+        <div class="db-row">Database Management Systems</div>
+      </div>
+
+      <div class="db-table" data-node="databases">
+        <div class="db-table-head">TABLE&nbsp;<span>databases</span></div>
+        <div class="db-row"><span class="pk">PK</span> SQL, Oracle</div>
+        <div class="db-row">MongoDB</div>
+        <div class="db-row">Neo4j</div>
+      </div>
+
+      <div class="db-table" data-node="bigdata">
+        <div class="db-table-head">TABLE&nbsp;<span>big_data</span></div>
+        <div class="db-row"><span class="pk">PK</span> Data Integration &amp; ETL</div>
+        <div class="db-row">Data Warehousing</div>
+        <div class="db-row">Pipeline Design</div>
+        <div class="db-row">Structured / Unstructured Data</div>
+      </div>
+
+      <div class="db-table" data-node="tools">
+        <div class="db-table-head">TABLE&nbsp;<span>tools</span></div>
+        <div class="db-row"><span class="pk">PK</span> Visual Studio, Spyder</div>
+        <div class="db-row">Google Colab</div>
+        <div class="db-row">Power BI, Tableau</div>
+        <div class="db-row">Excel</div>
+      </div>
+
+      <div class="db-table" data-node="libraries">
+        <div class="db-table-head">TABLE&nbsp;<span>libraries</span></div>
+        <div class="db-row"><span class="pk">PK</span> Pandas, NumPy</div>
+        <div class="db-row">Scikit-learn</div>
+        <div class="db-row">Matplotlib</div>
+        <div class="db-row">PyTorch</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="eyebrow">-- Projects</p>
+    <h2 class="section-title">Things I've built.</h2>
+
+    <div class="projects-list">
+
+      <article class="project-row">
+        <div class="project-id">01</div>
+        <div class="project-body">
+          <h3>Aspect-Based Sentiment Analysis of Product Reviews</h3>
+          <p class="project-stack">Python &middot; BERT &middot; spaCy</p>
+          <p class="project-desc">Engineered a data-processing pipeline to clean, transform and integrate large volumes of unstructured customer review data before feeding it into a BERT + spaCy classification model.</p>
+        </div>
+        <div class="project-metric"><span>99.91%</span>accuracy</div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-id">02</div>
+        <div class="project-body">
+          <h3>Ensemble Model for Ground Water Quality Prediction</h3>
+          <p class="project-stack">Python &middot; SMOTE &middot; scikit-learn</p>
+          <p class="project-desc">Built a data pipeline to preprocess and integrate 1,000+ records using SMOTE for class balancing, then developed and compared five ML models — Random Forest, XGBoost, SVM, KNN and HMM.</p>
+        </div>
+        <div class="project-metric"><span>5</span>models compared</div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-id">03</div>
+        <div class="project-body">
+          <h3>Expense Tracker System</h3>
+          <p class="project-stack">Python &middot; Tkinter &middot; MySQL</p>
+          <p class="project-desc">Designed a desktop application integrated with MySQL, applying data integration between the application layer and a normalized relational database — full CRUD, budget tracking and automated reporting.</p>
+        </div>
+        <div class="project-metric"><span>CRUD</span>full stack</div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-id">04</div>
+        <div class="project-body">
+          <h3>Student Management System</h3>
+          <p class="project-stack">C++ &middot; DSA</p>
+          <p class="project-desc">A record-management system applying core data structures — arrays, linked lists — and file handling for efficient storage and retrieval, designed as a modular, maintainable OOP codebase.</p>
+        </div>
+        <div class="project-metric"><span>OOP</span>architecture</div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-id">05</div>
+        <div class="project-body">
+          <h3>Text-Based Adventure Game</h3>
+          <p class="project-stack">C</p>
+          <p class="project-desc">An interactive console application simulating player navigation and decision-based challenges, built on structured programming and control-flow logic.</p>
+        </div>
+        <div class="project-metric"><span>C</span>console app</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION + CERTS -->
+  <section class="section" id="education">
+    <p class="eyebrow">-- Education</p>
+    <h2 class="section-title">Record of study.</h2>
+
+    <div class="edu-list">
+      <div class="edu-row">
+        <div class="edu-time">2024 – 2026</div>
+        <div class="edu-body">
+          <h3>PSG College of Technology</h3>
+          <p>M.Sc Applied Mathematics <span class="dim">&middot; CGPA 7.6</span></p>
+        </div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-time">2021 – 2024</div>
+        <div class="edu-body">
+          <h3>PSGR Krishnammal College for Women</h3>
+          <p>B.Sc Mathematics <span class="dim">&middot; 75%</span></p>
+        </div>
+      </div>
+    </div>
+
+    <p class="eyebrow eyebrow-spaced">-- Certificates</p>
+    <div class="chips">
+      <span class="chip">Python for Data Science, AI &amp; Development — IBM</span>
+      <span class="chip">Introduction to MS Excel — Microsoft</span>
+      <span class="chip">GenAI Powered Data Analytics Job Simulation — TATA</span>
+      <span class="chip">Data Analytics Job Simulation — Deloitte</span>
+    </div>
+
+    <p class="eyebrow eyebrow-spaced">-- Additional</p>
+    <div class="add-info">
+      <p>Workshop on Intelligent Systems (Gen AI &amp; Agentic AI), PSGTech.<P>
+      <P>Summer Program on Mathematics of Data Security, IIT Madras.</p>
+      <p class="dim">Languages: English (Proficient), Tamil (Native)</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <p class="eyebrow">-- Contact</p>
+    <h2 class="section-title">Let's build something.</h2>
+    <p class="section-sub">Open to software developer roles where math and engineering meet.</p>
+
+    <pre class="insert-block"><code><span class="kw">INSERT INTO</span> conversations (name, email, phone, linkedin)
+<span class="kw">VALUES</span> (
+  <span class="str">'Kavitha M'</span>,
+  <a href="mailto:kavim2203@gmail.com" class="str link">'kavim2203@gmail.com'</a>,
+  <a href="tel:+919363384245" class="str link">'+91 93633 84245'</a>,
+  <a href="https://linkedin.com/in/kavitha-muthuraman" target="_blank" rel="noopener" class="str link">'linkedin.com/in/kavitha-muthuraman'</a>
+);</code></pre>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; built by Kavitha M <span class="dim">&middot; <span id="year"></span></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
