@@ -2,260 +2,317 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kavitha Muthuraman — Data Scientist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kavitha M | Data Scientist & Applied Mathematician</title>
+<meta name="description" content="Portfolio of Kavitha Muthuraman: M.Sc. Applied Mathematics graduate (PSG Tech) working in data science, machine learning and quantitative analysis.">
+<meta name="theme-color" content="#0a0e1f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="grain"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="spotlight" id="spotlight" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
-  <div class="nav-inner">
-    <a class="nav-brand" href="#top">Kavitha Muthuraman</a>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#schema">Schema</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="mailto:kavim2203@gmail.com">Say hello!</a>
-  </div>
+  <a href="#home" class="brand" aria-label="Kavitha M, home"></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  <nav id="navLinks" class="nav-links" aria-label="Primary">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#coding">Coding</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<main id="top">
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="eyebrow reveal"><span class="pulse"></span> Open to Data Science &amp; ML roles</p>
+    <h1 class="reveal" style="--d:.08s">Hi, I'm <span class="grad">Kavitha Muthuraman.</span></h1>
+    <p class="title reveal" style="--d:.16s">Data Scientist <i>|</i> Applied Mathematician</p>
+    <p class="lead reveal" style="--d:.24s">M.Sc. Applied Mathematics graduate who turns data into decisions, combining statistics, machine learning and quantitative modelling to solve real-world problems.</p>
+    <div class="cta reveal" style="--d:.32s">
+      <a href="#projects" class="btn btn-primary magnetic">View Projects <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <!-- RESUME: keep this filename identical to the PDF already in your repository -->
+      <a href="KAVITHA M.pdf" class="btn btn-ghost magnetic" download>Download Resume <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></a>
+    </div>
+    <ul class="hero-stats reveal" style="--d:.4s">
+      <li><strong>M.Sc.</strong><span>Applied Mathematics</span></li>
+      <li><strong>4</strong><span>Featured projects</span></li>
+      <li><strong>BERT · ML</strong><span>NLP &amp; Predictive</span></li>
+    </ul>
+  </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="eyebrow">-- portfolio.python</p>
-        <pre class="query-line"><code><span class="kw">from</span> kavitha <span class="kw">import</span> Developer
-        myself = Developer(focus=<span class="str">'data-driven systems'</span>)<span class="cursor">&#9608;</span></code></pre>
-        <h1 class="hero-title">Kavitha M</h1>
-        <p class="hero-role">Data Scientist <span class="dim">/</span> Applied Mathematician</p>
-        <p class="hero-desc" style="text-align: justify; text-justify: inter-word;">I build software the way I was trained to think about data: structured, integrated, and provable. Python, C++, DSA, and SQL on the outside — data pipelines, ML models and relational thinking underneath.</p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View projects</a>
-          <a href="Kavitha_M_Resume.pdf" download class="btn btn-ghost">Download Resume ↓</a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat"><span class="stat-num">99.91<span class="unit">%</span></span><span class="stat-label">sentiment model accuracy</span></div>
-          <div class="stat"><span class="stat-num">5</span><span class="stat-label">ML models built &amp; compared</span></div>
-          <div class="stat"><span class="stat-num">1,000<span class="unit">+</span></span><span class="stat-label">records piped &amp; balanced</span></div>
-        </div>
+  <div class="hero-visual reveal" style="--d:.2s">
+    <div class="stage" id="stage">
+      <div class="halo layer" data-depth="-12"></div>
+      <div class="ring ring-a layer" data-depth="-6"></div>
+      <div class="ring ring-b layer" data-depth="-3"></div>
+      <div class="portrait-card" id="portrait">
+        <div class="glow-edge"></div>
+        <img src="profile.webp" alt="Portrait of Kavitha M" width="900" height="1068" fetchpriority="high" decoding="async">
+        <div class="shine"></div>
       </div>
+      <div class="badge badge-1 layer" data-depth="18"><b>M.Sc.</b> Applied Maths</div>
+      <div class="badge badge-2 layer" data-depth="26"><b>PSG Tech</b> · 2026</div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll to About"><span></span></a>
+</section>
 
-      <div class="hero-visual">
-        <div class="result-card">
-          </div>
-          <div class="result-body">
-            <img src="profile.jpg" alt="Kavitha M" class="profile-photo">
-            <table class="result-table">
-              <tr><td class="col-key">Role</td><td>Software Developer</td></tr>
-              <tr><td class="col-key">Degree</td><td>M.Sc Applied Mathematics</td></tr>
-              <tr><td class="col-key">Status</td><td><span class="badge">open_to_work</span></td></tr>
-            </table>
-          </div>
-        </div>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="sec-head reveal"><span class="kicker">01 · About</span><h2>Mathematics at the core, <span class="grad">data</span> in practice</h2></div>
+  <div class="about-grid">
+    <div class="glass about-text reveal">
+      <p>I'm an M.Sc. Applied Mathematics graduate from <strong>PSG College of Technology (2026)</strong>, skilled in Python, C++, SQL, statistics and machine learning. I enjoy data analysis, predictive modelling and model evaluation.</p>
+      <p>I'm a persistent, quick learner eager to apply analytical skills to real-world problems and generate data-driven insights.</p>
+      <div class="chips">
+        <span>Python</span><span>SQL</span><span>NLP</span><span>Predictive Modelling</span><span>Power BI</span>
       </div>
     </div>
-    <div class="scroll-cue"><span></span>scroll</div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <p class="eyebrow">-- About</p>
-    <div class="about-grid">
-      <h2 class="section-title">A mathematician who ships code.</h2>
-      <p class="about-body" style="text-align: justify; text-justify: inter-word;">Applied Mathematics postgraduate with hands-on software development experience across Python, C++ and SQL, backed by strong foundations in Data Structures &amp; Algorithms, Object-Oriented Programming, and Database Management Systems. I like building end-to-end applications that integrate relational databases with structured data pipelines, and I've worked with Big Data concepts like data integration, warehousing and large-scale handling. My goal is simple: apply solid engineering fundamentals to build software that's scalable and genuinely data-driven.</p>
+    <div class="pillars">
+      <article class="glass pillar tilt reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M7 15l4-5 3 3 5-7"/></svg></div><h3>Mathematical Modelling</h3><p>Turning real-world problems into rigorous quantitative models.</p></article>
+      <article class="glass pillar tilt reveal" style="--d:.06s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 18c3 0 3-12 6-12s3 12 6 12 3-12 6-12"/></svg></div><h3>Statistics &amp; Probability</h3><p>Regression, hypothesis testing, ANOVA and statistical modelling.</p></article>
+      <article class="glass pillar tilt reveal" style="--d:.12s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h6"/><circle cx="18" cy="16" r="3"/></svg></div><h3>Quantitative Analysis</h3><p>Optimization, risk analysis and numerical methods.</p></article>
+      <article class="glass pillar tilt reveal" style="--d:.18s"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7.5 7.5l3.5 9M16.5 7.5L13 16.5M8 6h8"/></svg></div><h3>Machine Learning</h3><p>Predictive analytics, NLP and deep learning with BERT, PyTorch and TensorFlow.</p></article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SCHEMA / SKILLS as ER DIAGRAM -->
-  <section class="section schema-section" id="schema">
-    <p class="eyebrow">-- Schema.dbml</p>
-    <h2 class="section-title">How I'm put together.</h2>
-    <p class="section-sub">An entity-relationship view of the skill set. Hover a table, or click to jump in.</p>
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="sec-head reveal"><span class="kicker">02 · Skills</span><h2>Technical <span class="grad">toolkit</span></h2></div>
+  <div class="skills-grid">
+    <article class="glass skill tilt reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div><h3>Programming</h3><ul class="tags"><li>Python</li><li>C</li><li>C++</li><li>SQL</li><li>R</li></ul></article>
+    <article class="glass skill tilt reveal" style="--d:.06s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5"/></svg></div><h3>Libraries &amp; Frameworks</h3><ul class="tags"><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Scikit-learn</li><li>TensorFlow</li><li>PyTorch</li></ul></article>
+    <article class="glass skill tilt reveal" style="--d:.12s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></div><h3>Data &amp; Analytics</h3><ul class="tags"><li>Power BI</li><li>Tableau</li><li>Excel</li><li>ETL</li><li>Data Cleaning</li></ul></article>
+    <article class="glass skill tilt reveal" style="--d:.18s"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg></div><h3>Machine Learning</h3><ul class="tags"><li>Machine Learning</li><li>NLP</li><li>BERT</li><li>Predictive Analytics</li><li>Model Evaluation</li></ul></article>
+    <article class="glass skill tilt reveal" style="--d:.24s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M6 4h12M6 20h12M8 4l8 8-8 8"/></svg></div><h3>Mathematics &amp; Statistics</h3><ul class="tags"><li>Linear Algebra</li><li>Probability</li><li>Statistical Modelling</li><li>Regression</li><li>Hypothesis Testing</li><li>ANOVA</li></ul></article>
+    <article class="glass skill tilt reveal" style="--d:.3s"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="12" r="2.5"/><path d="M6 8.5v7M8 7l8 4M8 17l8-4"/></svg></div><h3>Tools &amp; Practice</h3><ul class="tags"><li>Git</li><li>Data Analysis</li><li>Optimization</li><li>Risk Analysis</li></ul></article>
+  </div>
+</section>
 
-    <div class="erd-wrap">
-      <svg id="erd" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
+
+<!-- CODING PROFILES -->
+<section id="coding" class="section">
+  <div class="sec-head reveal">
+    <span class="kicker">03 · Coding Profiles</span>
+    <h2>Problem-solving <span class="grad">journey</span></h2>
+  </div>
+
+  <div class="coding-grid">
+    <article class="glass coding-card tilt reveal">
+
+      <div class="p-top">
+        <span class="p-tag">Data Structures & Algorithms</span>
+        <span class="p-num">LeetCode</span>
+      </div>
+
+      <h3>LeetCode Statistics</h3>
+
+      <div class="leetcode-count">
+        <strong id="leetcode-total">169</strong>
+        <span>Problems Solved</span>
+      </div>
+
+      <div class="leetcode-beats">
+        <span>🏆</span>
+        <strong>Beats 90.5%</strong>
+        <small>Performance Ranking</small>
+      </div>
+
+      <p>
+        Practising Data Structures and Algorithms,
+        strengthening logical thinking and problem-solving
+        through consistent coding challenges.
+      </p>
+
+      <div class="tags">
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Math</li>
+        <li>Greedy Algorithms</li>
+        <li>Dynamic Programming</li>
+        <li>DSA</li>
+        <li>Problem Solving</li>
+      </div>
+
+      <div class="p-links">
+        <a href="https://leetcode.com/u/kavitha_22/"
+           target="_blank" rel="noopener">
+          View LeetCode Profile ↗
+        </a>
+      </div>
+
+    </article>
+    <!-- FORAGE -->
+<article class="glass coding-card forage-card tilt reveal">
+
+  <div class="p-top">
+    <span class="p-tag">Virtual Job Simulations Experience</span>
+    <span class="p-num">Forage</span>
+  </div>
+
+  <h3>Forage Experiences</h3>
+
+  <div class="forage-item">
+    <strong>1. Deloitte – Data Analytics</strong>
+    <p>Created a Tableau dashboard and used Excel for data classification and business insights.</p>
+  </div>
+
+  <div class="forage-item">
+    <strong>2. Tata – GenAI Powered Data Analytics</strong>
+    <p>Performed EDA, explored delinquency risk prediction, and designed an AI-driven collections strategy.</p>
+  </div>
+
+  <div class="forage-item">
+    <strong>3. BCG X – GenAI</strong>
+    <p>Developed a financial chatbot using Python, Pandas, and rule-based logic.</p>
+  </div>
+
+  <div class="forage-item">
+    <strong>4. Commonwealth Bank – Introduction to Data Science</strong>
+    <p>Explored social media data insights and designed a database concept.</p>
+  </div>
+
+</article>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="sec-head reveal"><span class="kicker">03 · Projects</span><h2>Selected <span class="grad">work</span></h2></div>
+  <div class="projects-grid">
+
+    <article class="glass project tilt reveal">
+      <div class="p-top"><span class="p-num">01</span><span class="p-tag">NLP</span></div>
+      <h3>Aspect-Based Sentiment Analysis of Product Reviews</h3>
+      <p>Fine-tuned BERT in Python to classify product reviews as positive, negative or neutral, reaching 99.19% test accuracy. Used spaCy to extract key product aspects from negative reviews, mapped sentiment to each aspect, and tracked aspect sentiment trends over time with statistical scoring and automated aggregation.</p>
+      <ul class="tags"><li>Python</li><li>BERT</li><li>spaCy</li><li>NLP</li><li>LLMs</li></ul>
+      <div class="p-links"><a href="https://github.com/kavim2203-hub" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
+    </article>
+
+    <article class="glass project tilt reveal" style="--d:.08s">
+      <div class="p-top"><span class="p-num">02</span><span class="p-tag">Machine Learning</span></div>
+      <h3>ML Ensemble Model for Groundwater Quality Prediction</h3>
+      <p>Built a pipeline to preprocess, clean and integrate 1,000+ environmental records, using SMOTE to handle severe class imbalance. Evaluated 5 models (Random Forest, XGBoost, SVM, KNN, HMM) with accuracy, precision, recall, F1-score and confusion matrices; the selected ensemble reached 100% accuracy on the evaluated dataset.</p>
+      <ul class="tags"><li>Python</li><li>Random Forest</li><li>XGBoost</li><li>SVM</li><li>KNN</li><li>HMM</li><li>SMOTE</li><li>Lime&shap</li></ul>
+      <div class="p-links"><a href="https://github.com/kavim2203-hub" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
+    </article>
+
+    <article class="glass project tilt reveal" style="--d:.16s">
+      <div class="p-top"><span class="p-num">03</span><span class="p-tag">Business Intelligence</span></div>
+      <h3>E-Commerce Profitability Dashboard</h3>
+      <p>Interactive Power BI dashboard analysing sales, customer segments, product performance, profitability and returns. Used Excel, data transformation, DAX measures, KPI visuals and interactive filters to surface business insights and profitability trends.</p>
+      <ul class="tags"><li>Power BI</li><li>DAX</li><li>Excel</li></ul>
+      <div class="p-links"><a href="https://github.com/kavim2203-hub" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
+    </article>
+
+    <article class="glass project tilt reveal" style="--d:.24s">
+      <div class="p-top"><span class="p-num">04</span><span class="p-tag">Software</span></div>
+      <h3>Expense Tracker System</h3>
+      <p>Extended a Python expense-tracking application with SQL, implementing CRUD operations, expense categorisation and budget management. Designed reusable application and database components to manage financial records and generate expense reports.</p>
+      <ul class="tags"><li>Python</li><li>SQL</li><li>CRUD</li></ul>
+      <div class="p-links"><a href="https://github.com/kavim2203-hub" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
+    </article>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="sec-head reveal"><span class="kicker">04 · Education</span><h2>Academic <span class="grad">journey</span></h2></div>
+  <div class="timeline">
+    <div class="t-item reveal">
+      <span class="dot"></span>
+      <div class="glass t-card tilt"><span class="t-date">2024 – 2026</span><h3>M.Sc. Applied Mathematics</h3><p class="t-org">PSG College of Technology</p><span class="t-score">CGPA: 7.6</span></div>
     </div>
-
-    <div class="skill-tables" id="skillTables">
-      <div class="db-table" data-node="languages">
-        <div class="db-table-head">TABLE&nbsp;<span>languages</span></div>
-        <div class="db-row"><span class="pk">PK</span> Python</div>
-        <div class="db-row">C, C++</div>
-        <div class="db-row">R</div>
-        <div class="db-row">SQL</div>
-      </div>
-
-      <div class="db-table" data-node="core">
-        <div class="db-table-head">TABLE&nbsp;<span>core_cs</span></div>
-        <div class="db-row"><span class="pk">PK</span> Data Structures &amp; Algorithms</div>
-        <div class="db-row">Object-Oriented Programming</div>
-        <div class="db-row">Database Management Systems</div>
-      </div>
-
-      <div class="db-table" data-node="databases">
-        <div class="db-table-head">TABLE&nbsp;<span>databases</span></div>
-        <div class="db-row"><span class="pk">PK</span> SQL, Oracle</div>
-        <div class="db-row">MongoDB</div>
-        <div class="db-row">Neo4j</div>
-      </div>
-
-      <div class="db-table" data-node="bigdata">
-        <div class="db-table-head">TABLE&nbsp;<span>big_data</span></div>
-        <div class="db-row"><span class="pk">PK</span> Data Integration &amp; ETL</div>
-        <div class="db-row">Data Warehousing</div>
-        <div class="db-row">Pipeline Design</div>
-        <div class="db-row">Structured / Unstructured Data</div>
-      </div>
-
-      <div class="db-table" data-node="tools">
-        <div class="db-table-head">TABLE&nbsp;<span>tools</span></div>
-        <div class="db-row"><span class="pk">PK</span> Visual Studio, Spyder</div>
-        <div class="db-row">Google Colab</div>
-        <div class="db-row">Power BI, Tableau</div>
-        <div class="db-row">Excel</div>
-      </div>
-
-      <div class="db-table" data-node="libraries">
-        <div class="db-table-head">TABLE&nbsp;<span>libraries</span></div>
-        <div class="db-row"><span class="pk">PK</span> Pandas, NumPy</div>
-        <div class="db-row">Scikit-learn</div>
-        <div class="db-row">Matplotlib</div>
-        <div class="db-row">PyTorch</div>
-      </div>
+    <div class="t-item reveal" style="--d:.1s">
+      <span class="dot"></span>
+      <div class="glass t-card tilt"><span class="t-date">2021 – 2024</span><h3>B.Sc. Mathematics</h3><p class="t-org">PSGR Krishnammal College for Women</p><span class="t-score">75%</span></div>
     </div>
-  </section>
+  </div>
+  <div class="extras reveal">
+    <div class="glass extra"><h4>Certifications</h4><ul><li>Python for Data Science, AI &amp; Development, IBM (Coursera)</li><li>Azure Fundamentals, Microsoft</li><li>Introduction to Excel, Microsoft</li><li>Six Sigma White Belt, CSSV</li></ul></div>
+    <div class="glass extra"><h4>Workshops &amp; Programs</h4><ul><li>Workshop on Intelligent Systems (Gen AI &amp; Agentic AI), PSG Tech</li><li>Summer Program on Mathematics of Data Security, IIT Madras</li></ul></div>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <p class="eyebrow">-- Projects</p>
-    <h2 class="section-title">Things I've built.</h2>
+<!-- LEADERSHIP & ACTIVITIES -->
+<section id="activities" class="section">
 
-    <div class="projects-list">
+  <div class="sec-head reveal">
+    <span class="kicker">06 · Leadership</span>
+    <h2>Leadership & <span class="grad">Event Coordination</span></h2>
+  </div>
 
-      <article class="project-row">
-        <div class="project-id">01</div>
-        <div class="project-body">
-          <h3>Aspect-Based Sentiment Analysis of Product Reviews</h3>
-          <p class="project-stack">Python &middot; BERT &middot; spaCy</p>
-          <p class="project-desc">Engineered a data-processing pipeline to clean, transform and integrate large volumes of unstructured customer review data before feeding it into a BERT + spaCy classification model.</p>
-        </div>
-        <div class="project-metric"><span>99.91%</span>accuracy</div>
-      </article>
+  <div class="projects-grid">
 
-      <article class="project-row">
-        <div class="project-id">02</div>
-        <div class="project-body">
-          <h3>Ensemble Model for Ground Water Quality Prediction</h3>
-          <p class="project-stack">Python &middot; SMOTE &middot; scikit-learn</p>
-          <p class="project-desc">Built a data pipeline to preprocess and integrate 1,000+ records using SMOTE for class balancing, then developed and compared five ML models — Random Forest, XGBoost, SVM, KNN and HMM.</p>
-        </div>
-        <div class="project-metric"><span>5</span>models compared</div>
-      </article>
-
-      <article class="project-row">
-        <div class="project-id">03</div>
-        <div class="project-body">
-          <h3>Expense Tracker System</h3>
-          <p class="project-stack">Python &middot; Tkinter &middot; MySQL</p>
-          <p class="project-desc">Designed a desktop application integrated with MySQL, applying data integration between the application layer and a normalized relational database — full CRUD, budget tracking and automated reporting.</p>
-        </div>
-        <div class="project-metric"><span>CRUD</span>full stack</div>
-      </article>
-
-      <article class="project-row">
-        <div class="project-id">04</div>
-        <div class="project-body">
-          <h3>Student Management System</h3>
-          <p class="project-stack">C++ &middot; DSA</p>
-          <p class="project-desc">A record-management system applying core data structures — arrays, linked lists — and file handling for efficient storage and retrieval, designed as a modular, maintainable OOP codebase.</p>
-        </div>
-        <div class="project-metric"><span>OOP</span>architecture</div>
-      </article>
-
-      <article class="project-row">
-        <div class="project-id">05</div>
-        <div class="project-body">
-          <h3>Text-Based Adventure Game</h3>
-          <p class="project-stack">C</p>
-          <p class="project-desc">An interactive console application simulating player navigation and decision-based challenges, built on structured programming and control-flow logic.</p>
-        </div>
-        <div class="project-metric"><span>C</span>console app</div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- EDUCATION + CERTS -->
-  <section class="section" id="education">
-    <p class="eyebrow">-- Education</p>
-    <h2 class="section-title">Record of study.</h2>
-
-    <div class="edu-list">
-      <div class="edu-row">
-        <div class="edu-time">2024 – 2026</div>
-        <div class="edu-body">
-          <h3>PSG College of Technology</h3>
-          <p>M.Sc Applied Mathematics <span class="dim">&middot; CGPA 7.6</span></p>
-        </div>
+    <article class="glass project reveal">
+      <div class="p-top">
+        <span class="p-tag">Event Organization</span>
+        <span class="p-num">01</span>
       </div>
-      <div class="edu-row">
-        <div class="edu-time">2021 – 2024</div>
-        <div class="edu-body">
-          <h3>PSGR Krishnammal College for Women</h3>
-          <p>B.Sc Mathematics <span class="dim">&middot; 75%</span></p>
-        </div>
+
+      <h3>Departmental Poster-Making Event</h3>
+
+      <p>
+        Organized and coordinated a poster-making event at
+        PSGR Krishnammal College, supporting event planning
+        and participant coordination.
+      </p>
+
+    </article>
+
+    <article class="glass project reveal">
+      <div class="p-top">
+        <span class="p-tag">Event Coordination</span>
+        <span class="p-num">02</span>
       </div>
+
+      <h3>Event Catering Coordination</h3>
+
+      <p>
+        Organized catering arrangements for a departmental
+        event, coordinating food arrangements and event logistics.
+      </p>
+
+    </article>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="sec-head reveal"><span class="kicker">05 · Contact</span><h2>Let's <span class="grad">connect</span></h2></div>
+  <div class="glass contact reveal">
+    <p>I'm open to opportunities in data science, machine learning and quantitative analysis. Feel free to reach out.</p>
+    <div class="contact-links">
+      <a href="mailto:kavim2203@gmail.com" class="c-link magnetic"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><small>Email</small>kavim2203@gmail.com</span></a>
+      <a href="https://www.linkedin.com/in/kavitha-muthuraman" target="_blank" rel="noopener" class="c-link magnetic"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6m0 2c0-1.5 1-2 2-2s2 .8 2 2.5V17"/></svg></span><span><small>LinkedIn</small>kavitha-muthuraman</span></a>
+      <a href="https://github.com/kavim2203-hub" target="_blank" rel="noopener" class="c-link magnetic"><span class="ico"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5m12 4.5v-3.2a2.8 2.8 0 0 0-.8-2.2c2.700-.3 5.500-1.300 5.500-6a4.700 4.700 0 0 0-1.300-3.300 4.400 4.400 0 0 0-.1-3.300s-1-.3-3.400 1.300a11.600 11.600 0 0 0-6 0C6.500 2.700 5.500 3 5.500 3a4.400 4.400 0 0 0-.1 3.300A4.700 4.700 0 0 0 4 9.600c0 4.600 2.800 5.700 5.500 6a2.800 2.800 0 0 0-.8 2.200V21"/></svg></span><span><small>GitHub</small>kavim2203-hub</span></a>
     </div>
-
-    <p class="eyebrow eyebrow-spaced">-- Certificates</p>
-    <div class="chips">
-      <span class="chip">Python for Data Science, AI &amp; Development — IBM</span>
-      <span class="chip">Introduction to MS Excel — Microsoft</span>
-      <span class="chip">GenAI Powered Data Analytics Job Simulation — TATA</span>
-      <span class="chip">Data Analytics Job Simulation — Deloitte</span>
-    </div>
-
-    <p class="eyebrow eyebrow-spaced">-- Additional</p>
-    <div class="add-info">
-      <p>Workshop on Intelligent Systems (Gen AI &amp; Agentic AI), PSGTech.<P>
-      <P>Summer Program on Mathematics of Data Security, IIT Madras.</p>
-      <p class="dim">Languages: English (Proficient), Tamil (Native)</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact-section" id="contact">
-    <p class="eyebrow">-- Contact</p>
-    <h2 class="section-title">Let's build something.</h2>
-    <p class="section-sub">Open to software developer roles where math and engineering meet.</p>
-
-    <pre class="insert-block"><code><span class="kw">INSERT INTO</span> conversations (name, email, phone, linkedin)
-<span class="kw">VALUES</span> (
-  <span class="str">'Kavitha M'</span>,
-  <a href="mailto:kavim2203@gmail.com" class="str link">'kavim2203@gmail.com'</a>,
-  <a href="tel:+919363384245" class="str link">'+91 93633 84245'</a>,
-  <a href="https://linkedin.com/in/kavitha-muthuraman" target="_blank" rel="noopener" class="str link">'linkedin.com/in/kavitha-muthuraman'</a>
-);</code></pre>
-  </section>
-
+  </div>
+</section>
 </main>
 
 <footer class="footer">
-  <p>Designed &amp; built by Kavitha M <span class="dim">&middot; <span id="year"></span></span></p>
+  <p>© <span id="year"></span> Kavitha Muthuraman · Designed &amp; built with care</p>
+  <a href="#home" class="to-top">Back to top ↑</a>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
